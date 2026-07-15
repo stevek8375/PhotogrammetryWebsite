@@ -1,0 +1,335 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+	<title>Painted Rock in VR</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet"
+		  href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="divided">
+
+		<!-- Zero -->
+		<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+			<div class="content">
+				<h1>Painted Rock in VR</h1>
+				<p>This is a breakdown of my reconstruction of a significant rock art mural in the Carrizo Plain.  By referencing historical photos, users can view the restored art in a VR setting.</p>
+			</div>
+			<div class="image">
+
+				<img src="images/VR/banner_before.jpg"
+					 class="banner-slide active"
+					 data-caption="<strong>CURRENT CONDITION</strong><br>The pictographs as they appear today."
+					 alt="Current damaged state">
+
+				<img src="images/VR/banner_after.jpg"
+					 class="banner-slide"
+					 data-caption="<strong>DIGITAL RESTORATION</strong><br>Faithfully reconstructed from historical photographs."
+					 alt="Digital restoration">
+
+				<div class="banner-caption"></div>
+
+			</div>
+		</section>
+
+		<!-- One -->
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+			<div class="content">
+				<h2>The art itself</h2>
+				<p>The pictograph mural at Painted Rock is currently heavily damaged, but historical photos shows how the wall looked previously.  The first intention is to digtally restore the art as faithfully as possible.</p>
+			</div>
+			<div class="image">
+
+				<a href="images/VR/1_1.jpg"
+				   class="glightbox"
+				   data-gallery="historical-gallery"
+				   data-title="Historical photo showing the left side">
+
+					<img src="images/VR/1_1.jpg"
+						 alt="Historical photo showing the left side">
+				</a>
+
+				<!-- Hidden images for the gallery -->
+
+				<a href="images/VR/1_2.jpg"
+				   class="glightbox"
+				   data-gallery="historical-gallery"
+				   data-title="Historical photo showing the right side"
+				   style="display:none;"></a>
+			</div>
+		</section>
+
+		<!-- Two -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+			<div class="content">
+				<h2>Camera arrays</h2>
+				<p>At the site, photos are taken different angles to get enough visual data to later align the images in 3D space to generate a 3D model.  Days of overcast weather was chosen to eliminate shadows for proper capture.</p>
+			</div>
+			<div class="image">
+
+				<a href="images/VR/2_1.jpg"
+				   class="glightbox"
+				   data-gallery="array-gallery"
+				   data-title="All photos are processed to even out shadows and highlights">
+
+					<img src="images/VR/2_1.jpg"
+						 alt="Historical photo showing the left side">
+				</a>
+
+				<!-- Hidden images for the gallery -->
+
+				<a href="images/VR/2_2.jpg"
+				   class="glightbox"
+				   data-gallery="array-gallery"
+				   data-title="All photos are aligned in 3D space to line up details"
+				   style="display:none;"></a>
+			</div>
+		</section>
+
+		<!-- Three -->
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+			<div class="content">
+				<h2>From cloud to polygons</h2>
+				<p>Once the software aligns all of the images, a cloud data set is generated from which a polygonal model is generated.</p>
+			</div>
+			<div class="image">
+
+				<a href="images/VR/3_1.jpg"
+				   class="glightbox"
+				   data-gallery="mesh-gallery"
+				   data-title="First, a point cloud data is generated from the alignment of cameras">
+
+					<img src="images/VR/3_1.jpg"
+						 alt="Historical photo showing the left side">
+				</a>
+
+				<!-- Hidden images for the gallery -->
+
+				<a href="images/VR/3_2.jpg"
+				   class="glightbox"
+				   data-gallery="mesh-gallery"
+				   data-title="Second, a polygonal model is generated"
+				   style="display:none;"></a>
+
+				<a href="images/VR/3_3.jpg"
+				   class="glightbox"
+				   data-gallery="mesh-gallery"
+				   data-title="Third, the polygonal model is prepped for retopology"
+				   style="display:none;"></a>
+			</div>
+		</section>
+
+		<!-- Four -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+			<div class="content">
+				<h2>Retopology</h2>
+				<p>The 3D model goes through a retopology process.  This produces a cleaner model and more lightweight, which is essential for VR and AR use.</p>
+			</div>
+			<div class="image">
+
+				<a href="images/VR/4_1.jpg"
+				   class="glightbox"
+				   data-gallery="retopo-gallery"
+				   data-title="All photos are processed to even out shadows and highlights">
+
+					<img src="images/VR/4_1.jpg"
+						 alt="Historical photo showing the left side">
+				</a>
+
+				<!-- Hidden images for the gallery -->
+
+				<a href="images/VR/4_2.jpg"
+				   class="glightbox"
+				   data-gallery="retopo-gallery"
+				   data-title="All photos are aligned in 3D space to line up details"
+				   style="display:none;"></a>
+			</div>
+		</section>
+
+		<!-- Five -->
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+			<div class="content">
+				<h2>Texturing</h2>
+				<p>The same process that generated a polygonal model also generates textures.  From those textures, the restoration can begin.</p>
+			</div>
+			<div class="image">
+
+				<a href="images/VR/5_1.jpg"
+				   class="glightbox"
+				   data-gallery="texture_gallery"
+				   data-title="From the retopology process, UV's are blocked out to better isolate the pictograph areas for work'">
+
+					<img src="images/VR/5_1.jpg"
+						 alt="Historical photo showing the left side">
+				</a>
+
+				<!-- Hidden images for the gallery -->
+
+				<a href="images/VR/5_2.jpg"
+				   class="glightbox"
+				   data-gallery="texture_gallery"
+				   data-title="The initial texture, showing the current damaged state of the pictographs"
+				   style="display:none;"></a>
+
+				<a href="images/VR/5_3.jpg"
+				   class="glightbox"
+				   data-gallery="texture_gallery"
+				   data-title="Using the historical photos for reference, the art is first redrawn by hand"
+				   style="display:none;"></a>
+
+				<a href="images/VR/5_4.jpg"
+				   class="glightbox"
+				   data-gallery="texture_gallery"
+				   data-title="Solid shapes are then created digitally to fill in the colors"
+				   style="display:none;"></a>
+
+				<a href="images/VR/5_5.jpg"
+				   class="glightbox"
+				   data-gallery="texture_gallery"
+				   data-title="The resulting restored art"
+				   style="display:none;"></a>
+			</div>
+		</section>
+
+		<!-- Six -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+			<div class="content">
+				<h2>Scale</h2>
+				<p>Before everything is assembled for VR use, the model is properly scaled based on measurements taken at the sight.</p>
+			</div>
+			<div class="image">
+
+				<a href="images/VR/6_1.jpg"
+				   class="glightbox"
+				   data-gallery="scale-gallery"
+				   data-title="Measurements were carefully taken away from any art">
+
+					<img src="images/VR/6_1.jpg"
+						 alt="Historical photo showing the left side">
+				</a>
+
+				<!-- Hidden images for the gallery -->
+
+				<a href="images/VR/6_2.jpg"
+				   class="glightbox"
+				   data-gallery="scale-gallery"
+				   data-title="Model properly scaled to look accurate when walking around in VR"
+				   style="display:none;"></a>
+			</div>
+		</section>
+
+		<!-- Seven -->
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+			<div class="content">
+				<h2>VR interaction</h2>
+				<p>The optimized model and textures are reassembled for VR use.  Lighting and background are added for further immersion.  VR interaction is the last stage, which includes navigation and ability to switch the artwork between damaged and restored.</p>
+			</div>
+			<div class="image">
+				<a href="images/VR/vr.mp4"
+				   class="glightbox"
+				   data-type="video">
+
+					<img src="images/VR/vr_thumb.jpg"
+						 alt="VR Demo">
+
+				</a>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="wrapper style1 align-center">
+			<div class="inner">
+				<ul class="icons">
+					<li>
+						<a href="https://www.instagram.com/stevek_photo/"
+						   target="_blank"
+						   rel="noopener noreferrer"
+						   class="icon brands style2 fa-instagram">
+							<span class="label">Instagram</span>
+						</a>
+					</li>
+
+					<li>
+						<a href="https://www.linkedin.com/in/steve-kim-animator/"
+						   target="_blank"
+						   rel="noopener noreferrer"
+						   class="icon brands style2 fa-linkedin-in">
+							<span class="label">LinkedIn</span>
+						</a>
+					</li>
+
+					<li>
+						<a href="mailto:stevek8375@yahoo.com"
+						   class="icon style2 fa-envelope">
+							<span class="label">Email</span>
+						</a>
+					</li>
+				</ul>
+				<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const slides = document.querySelectorAll(".banner-slide");
+    const caption = document.querySelector(".banner-caption");
+
+    let current = 0;
+
+    // Show the first caption when the page loads
+    caption.innerHTML = slides[current].dataset.caption;
+
+    setInterval(function () {
+
+        // Hide current slide
+        slides[current].classList.remove("active");
+
+        // Move to next slide
+        current = (current + 1) % slides.length;
+
+        // Show next slide
+        slides[current].classList.add("active");
+
+        // Update the caption
+        caption.innerHTML = slides[current].dataset.caption;
+
+    }, 5000);
+
+});
+</script>
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+	<script>
+		const lightbox = GLightbox({
+			selector: '.glightbox',
+			touchNavigation: true,
+			loop: true,
+			zoomable: true,
+			draggable: true
+		});
+	</script>
+
+</body>
+</html>
